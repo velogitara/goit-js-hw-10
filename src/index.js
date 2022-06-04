@@ -18,7 +18,10 @@ Refs.inputRef.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 function onInput(e) {
   e.preventDefault();
   let inputValue = e.target.value.trim();
-  if (inputValue === '' || inputValue.length == 1) {
+  if (inputValue === '') {
+    Refs.countryListRef.innerHTML = '';
+    return;
+  } else if (inputValue.length == 1) {
     Refs.countryListRef.innerHTML = '';
   }
 
@@ -66,6 +69,7 @@ function createCountryCard(items) {
     .join('');
 }
 
-function onError() {
+function onError(err) {
+  //   console.log(err);
   Notiflix.Notify.failure('Oops, there is no country with that name');
 }
