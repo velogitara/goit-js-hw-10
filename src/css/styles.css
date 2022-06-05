@@ -52,3 +52,34 @@ textarea {
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.keyName{
+  font-weight: bolder;
+}
+
+.country-list{
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: bisque;
+
+}
+.country-list__items{
+  margin-top: 10px;
+}
+
+.country-info{
+  background-color: bisque;
+}
+
+.country-info__line{
+  margin-right: auto;
+  margin-top: 10px;
+  background-color: bisque;
+}
