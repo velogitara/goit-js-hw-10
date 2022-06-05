@@ -67,7 +67,7 @@ function createCountryCard(items) {
         <p class="country-info__line"><img src="${item.flags.svg}" alt="${
         item.name.official
       }" width='30px' height='20px'>
-        ${item.name.official}</p>
+        <span class="countryName">${item.name.official}</span></p>
         <p class="country-info__line"> <span class="keyName">Capital</span>: ${item.capital}</p>
         <p class="country-info__line"> <span class="keyName">Population</span>: ${
           item.population
